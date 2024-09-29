@@ -1,0 +1,125 @@
+# I didn't know how to comment out the test cases that I don't want to test
+# that means my a1_my_tests.py will run everything, not each individual test case
+# so probably just copy and paste the ones I'm not testing at the moment,
+# and just leave the one I am testing in here. Thank you
+
+# Test Case 1 (Random)
+
+0 DriverRequest Amaranth 1,1 1
+0 DriverRequest Bergamot 2,2 1
+0 DriverRequest Crocus 3,3 1
+0 DriverRequest Dahlia 4,4 1
+0 DriverRequest Edelweiss 5,5 1
+0 DriverRequest Foxglove 6,6 1
+0 DriverRequest Geranium 7,7 1
+0 DriverRequest Hibiscus 8,8 1
+0 DriverRequest Iris 9,9 1
+0 DriverRequest Jasmine 10,10 1
+
+12 RiderRequest Cerise 14,22 11,15 15
+7 RiderRequest Indigo 30,40 25,35 10
+19 RiderRequest Lavender 5,10 2,8 20
+33 RiderRequest Maroon 22,18 20,25 25
+5 RiderRequest Olive 15,30 10,20 12
+24 RiderRequest Peach 8,12 6,9 18
+40 RiderRequest Ruby 3,7 1,5 22
+
+
+
+# Test Case 2 (Random)
+
+0 DriverRequest Amaranth 1,1 1
+0 DriverRequest Bergamot 1,2 1
+0 DriverRequest Crocus 1,3 1
+0 DriverRequest Dahlia 1,4 1
+0 DriverRequest Edelweiss 1,5 1
+0 DriverRequest Foxglove 1,6 1
+0 DriverRequest Geranium 1,7 1
+0 DriverRequest Hibiscus 1,8 1
+0 DriverRequest Iris 1,9 1
+0 DriverRequest Jasmine 1,10 1
+
+8 RiderRequest Amber 12,18 6,14 20
+14 RiderRequest Blue 22,30 18,28 10
+21 RiderRequest Coral 5,9 3,8 15
+27 RiderRequest Emerald 33,40 30,35 25
+2 RiderRequest Fuchsia 10,20 7,15 12
+36 RiderRequest Gold 15,25 10,20 18
+43 RiderRequest Hazel 9,14 5,10 22
+
+
+
+# Test Case 3 (Random)
+
+0 DriverRequest Amaranth 1,1 1
+5 DriverRequest Bergamot 2,2 1
+10 DriverRequest Crocus 3,3 1
+15 DriverRequest Dahlia 4,4 1
+20 DriverRequest Edelweiss 5,5 1
+25 DriverRequest Foxglove 6,6 1
+30 DriverRequest Geranium 7,7 1
+35 DriverRequest Hibiscus 8,8 1
+40 DriverRequest Iris 9,9 1
+45 DriverRequest Jasmine 10,10 1
+50 DriverRequest Kale 11,11 1
+
+3 RiderRequest Jade 8,15 4,10 18
+11 RiderRequest Lilac 20,25 15,22 12
+17 RiderRequest Mint 13,19 10,14 20
+29 RiderRequest Navy 30,35 25,30 15
+6 RiderRequest Olive 5,10 3,8 10
+22 RiderRequest Pink 18,24 14,20 25
+35 RiderRequest Quartz 12,16 8,12 22
+
+
+
+# Test Case 4 (Everyone Cancels)
+
+5 DriverRequest Amaranth 1,1 1
+5 DriverRequest Bergamot 2,2 1
+5 DriverRequest Crocus 3,3 1
+
+0 RiderRequest Cerise 14,22 11,15 1
+0 RiderRequest Indigo 30,40 25,35 1
+0 RiderRequest Lavender 5,10 2,8 1
+0 RiderRequest Maroon 22,18 20,25 1
+
+
+
+# Test Case 5 (Everyone is picked up)
+
+5 DriverRequest Amaranth 1,1 1
+5 DriverRequest Bergamot 2,2 1
+5 DriverRequest Crocus 3,3 1
+
+0 RiderRequest Cerise 14,22 11,15 15
+0 RiderRequest Indigo 30,40 25,35 15
+0 RiderRequest Lavender 5,10 2,8 15
+0 RiderRequest Maroon 22,18 20,25 15
+
+
+
+# Test Case 6 (RiderRequest Before Driver Request)
+
+0 RiderRequest Amber 2,3 6,6 10
+0 RiderRequest Fawn 3,2 3,6 10
+0 RiderRequest Beige 4,4 3,5 5
+
+20 DriverRequest Elm 5,3 1
+15 DriverRequest Dogwood 4,4 1
+25 DriverRequest Fir 6,3 1
+0 DriverRequest Ash 2,3 1
+
+
+
+# Test Case 7 (Events Don't Come In Order)
+
+5 DriverRequest Amaranth 1,1 1
+37 DriverRequest Bergamot 2,2 1
+4 DriverRequest Crocus 3,3 1
+10 DriverRequest Dahlia 4,4 1
+
+12 RiderRequest Cerise 14,22 11,15 15
+7 RiderRequest Indigo 30,40 25,35 10
+19 RiderRequest Lavender 5,10 2,8 20
+33 RiderRequest Maroon 22,18 20,25 25
